@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {--fiery-rose: #FF5874ff;
+--yellow-green-crayola: #C3E88Dff;
+--raisin-black: #2D2D3Eff;
+--space-cadet: #3D355Dff;
+--raisin-black-2: #2D2D3Eff;
+--davys-grey: #555555ff;
+--royal-purple: #8651C9ff;
+}
+
+* {
+    font-family: 'Noto Sans', 'sans-serif';
+    box-sizing: border-box;
+    margin: 0;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--raisin-black-2);
+    color: #fff;  
+}
+
+header {
+    max-width: 800px;
+    width: 100%;
+    padding: 15px 15px;
+    margin: 0 auto;
+}
+header h1 {
+    color: var(--fiery-rose);
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.todo-list {
+    max-width: 800px;
+    width: 100%;    
+    padding: 15px 15px;
+    margin: 0 auto;
+}
+
+.todo-list h2 {
+    color: var(--fiery-rose);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.todo-input {
+    display: flex;
+}
+
+#inputField {
+    flex: 1 1 0%;
+    padding: 1rem;
+    margin: 1rem 1rem;
+    background-color: var(--davys-grey);
+    border-radius: 1rem;
+    color: rgb(229, 226, 226);
+    font-size: 1.25rem;
+}
+
+input, button {
+    background: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.add-btn {
+    background-image: linear-gradient(to right, var(--fiery-rose), var(--royal-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.235rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.add-btn:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.add-btn:active {
+    opacity: 0.6;
+    transition: 0.1s;
+}
+
+.todo-list {
+    padding: 1rem;
+    
+}
