@@ -104,8 +104,6 @@ input, button {
     width: 100%;
     display: block;
     transition: 0.4s;
-    cursor: pointer;
-    text-decoration: none;
 }
 .todo-list .task .content .text:not(:read-only) {
     color: var(--fiery-rose);
