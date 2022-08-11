@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
         <h1>Task Tracker</h1>
-        <div class="todo-input">
+        <div>
             
-                <input type="text"
-                id="inputField"
-                placeholder="What are you planning today ?">
-                <button class="add-btn"
-                id="addBtn">Add Task</button>
+                <form class="todo-box" id="todoBox">
+                    <input type="text"
+                    id="inputField"
+                    placeholder="What are you planning today ?">
+                    <input type="submit"
+                    class="add-btn"
+                    id="addBtn"
+                    value="Add Task"></input>
+                </form>
             
         </div>
     </header>
@@ -25,16 +29,19 @@
     <div class="todo-list"
     id="todoList">
     <h2>Tasks</h2>
-        <div class="task">
-            <input type="text"
-            class="text"
-            value="My task"
-            readonly>
-            <div>
+        <!-- <div class="task" id="task">
+            <div class="content">
+                <input type="text"
+                class="text"
+                value="My task"
+                readonly>
+            </div>
+            <div class="buttons">
                 <button class="edit-btn" id="editBtn">Edit</button>
                 <button class="delete-btn" id="deleteBtn">Delete</button>
             </div>
-        </div>
+        </div> -->
     </div>
+    <script src="assets/script.js"></script>
 </body>
 </html>
